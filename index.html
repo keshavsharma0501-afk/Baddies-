@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forgive Me</title>
+</head>
+<body style="background:pink; text-align:center; padding-top:100px;">
+
+<h1>Will you forgive me? 🥺</h1>
+
+<button onclick="accept()">Accept 💖</button>
+<button onclick="reject()">Reject 😤</button>
+
+<script>
+let count = 0;
+function reject(){
+  count++;
+  if(count < 3){
+    alert("Please don’t press reject 🥺");
+  } else {
+    window.location.href = "final.html";
+  }
+}
+function accept(){
+  window.location.href = "final.html";
+}
+</script>
+
+</body>
+</html>
